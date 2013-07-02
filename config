@@ -119,7 +119,9 @@ channels = (
     autojoin = "yes";
     password = "roosevelt";
   },
-  { name = "#sfointernz"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#sfointerns"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#glimpse-dev"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "##blueflood"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -290,7 +292,12 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "root"; user_name = "root"; nick = "root"; };
+  core = {
+    real_name = "Nathan Jordan";
+    user_name = "njordan";
+    nick = "njordan";
+    timestamp_format = "%I:%M %p";
+  };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "envy"; };
   "perl/core/scripts" = {
@@ -303,3 +310,68 @@ settings = {
     awl_display_key_active = "$H%{$Q:$C%}$S";
   };
 };
+hilights = (
+  { text = "hello"; color = "5,5"; nick = "yes"; word = "yes"; },
+  {
+    text = "tea";
+    color = "%G";
+    nick = "yes";
+    word = "yes";
+    fullword = "yes";
+  },
+  { text = "njordan"; nick = "no"; word = "yes"; }
+);
+windows = {
+  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
+  2 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#ele-dev";
+        tag = "Freenode";
+      }
+    );
+  };
+  3 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "##ele-ops";
+        tag = "Freenode";
+      }
+    );
+  };
+  4 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#sfointernz";
+        tag = "Freenode";
+      }
+    );
+  };
+  5 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "##blueflood";
+        tag = "Freenode";
+      }
+    );
+  };
+  6 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#glimpse-dev";
+        tag = "Freenode";
+      }
+    );
+  };
+};
+mainwindows = { 6 = { first_line = "1"; lines = "37"; }; };
