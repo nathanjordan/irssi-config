@@ -311,15 +311,14 @@ settings = {
   };
 };
 hilights = (
-  { text = "hello"; color = "5,5"; nick = "yes"; word = "yes"; },
+  { text = "njordan"; color = "5,5"; nick = "yes"; word = "yes"; },
   {
     text = "tea";
     color = "%G";
     nick = "yes";
     word = "yes";
     fullword = "yes";
-  },
-  { text = "njordan"; nick = "no"; word = "yes"; }
+  }
 );
 windows = {
   1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
