@@ -347,7 +347,7 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#sfointernz";
+        name = "##blueflood";
         tag = "Freenode";
       }
     );
@@ -357,7 +357,7 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "##blueflood";
+        name = "#glimpse-dev";
         tag = "Freenode";
       }
     );
@@ -367,10 +367,50 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#glimpse-dev";
+        name = "#sfointerns";
+        tag = "Freenode";
+      }
+    );
+  };
+  7 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#ele-standup";
+        tag = "Freenode";
+      }
+    );
+  };
+  8 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "##rssf";
+        tag = "Freenode";
+      }
+    );
+  };
+  9 = {
+    items = (
+      {
+        type = "QUERY";
+        chat_type = "IRC";
+        name = "jirwin";
+        tag = "Freenode";
+      }
+    );
+  };
+  10 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#blueflood";
         tag = "Freenode";
       }
     );
   };
 };
-mainwindows = { 6 = { first_line = "1"; lines = "37"; }; };
+mainwindows = { 10 = { first_line = "1"; lines = "36"; }; };
